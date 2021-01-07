@@ -1,4 +1,6 @@
-# table-to-text-generation
+# Controlled Table-To-Text Generation
+
+Please refer to our project report for details on the work and our results: [Project Report](https://github.com/mon95/controlled-table-to-text-generation/blob/master/Project_Final_Report_Controlled_ToTTo.pdf)
 
 Use following command to run the training script.
 ```
