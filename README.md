@@ -2,6 +2,10 @@
 
 Please refer to our project report for details on the work and our results: [Project Report](https://github.com/mon95/controlled-table-to-text-generation/blob/master/Project_Final_Report_Controlled_ToTTo.pdf)
 
+Note: This repo has been moved (partially) from our internal private repository to serve as documentation. For more info, please reach out over email.
+
+
+
 Use following command to run the training script.
 ```
 python run.py --mode train \
