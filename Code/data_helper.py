@@ -52,6 +52,7 @@ def read_file(arg, f):
         inputs = []
         targets = []
         for line in lines:
+            # load json data on each line
             entry = json.loads(line)
             # print(entry)
             if arg.input_string == "raw_table":
@@ -67,6 +68,7 @@ def read_file(arg, f):
 
 
 def create_totto_datasets(arg):
+    print("Creating Totto datasets..")
     # arg.train_input, arg.development_input
     start = time.time()
     if arg.toy_dataset:

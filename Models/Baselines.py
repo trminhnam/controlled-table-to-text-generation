@@ -12,9 +12,14 @@ class Bert2Bert(nn.Module):
         self.seq2seq_model = EncoderDecoderModel.from_encoder_decoder_pretrained(
             "bert-base-uncased", "bert-base-uncased"
         )  # initialize Bert2Bert from pre-trained checkpoints
+        # self.seq2seq_model.encoder.from_pretrained("bert-base-uncased")
+        # self.seq2seq_model.decoder.from_pretrained("bert-base-uncased")
         self.tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
 
     def get_model_inputs(self, inputs, targets, device):
+        print(f"inputs: {inputs}")
+        print(f"targets: {targets}")
+        exit()
         tokenizer_op = self.tokenizer(
             inputs, padding=True, truncation=True, return_tensors="pt"
         )
