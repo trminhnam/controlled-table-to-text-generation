@@ -1,0 +1,9 @@
+python run.py --mode train \                                              ✔  py38   01:04:21 PM  
+                --model Bert2Bert \
+                --num_epochs 2\
+                --batch_size 3\
+                --train_input 'Data/totto_data_small/totto_train_data_1000.jsonl'\
+                --development_input 'Data/totto_data_small/totto_dev_data_500.jsonl'\
+                --input_string 'raw_table'
+
+
